@@ -19,4 +19,4 @@ export * from "./toggle";
 export * from "./tags";
 export * from "./navigator";
 export * from "./badge";
-export * from "./keyboardShortcut";
+export * from "./keyboardShortcuts";
