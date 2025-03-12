@@ -21,7 +21,7 @@
     SearchVariable,
   } from "@sparrow/workspaces/constants";
   import { WithButtonV3 } from "@sparrow/workspaces/hoc";
-  import { SaveRegular } from "@sparrow/library/icons";
+  import { AddRegular, SaveRegular } from "@sparrow/library/icons";
   import { QuestionCirlceReqular } from "@sparrow/library/icons";
   export let azureBlobCDN;
   /**
@@ -186,12 +186,7 @@
                 onClick={onSaveEnvironment}
                 customWidth="72px"
                 size="small"
-                disable={$currentEnvironment?.property?.environment?.state
-                  ?.isSaveInProgress ||
-                  $currentEnvironment?.isSaved ||
-                  userRole === WorkspaceRole.WORKSPACE_VIEWER}
-                loader={$currentEnvironment?.property?.environment?.state
-                  ?.isSaveInProgress}
+                disable={true}
               />
             </Tooltip>
           </div>
